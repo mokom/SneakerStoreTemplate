@@ -1,0 +1,524 @@
+/* /*=============== CSS RESET ==================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*=================GENERAL==============================*/
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/ProximaNova-Light.woff') format('woff'),
+      url('../fonts/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/ProximaNova-Regular.woff') format('woff'),
+      url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Proxima;
+  src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
+      url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+
+
+
+/*=============== HEADER ==================*/
+.page-header, .page-footer {
+  height: 100px;
+  width: 100%;
+  background-color: #000;
+}
+
+.header-logo {
+  font-size: 30px;
+  width: 20%;
+  color: #fff;
+}
+
+.page-header .wrapper {
+  width: 1170px;
+  height: 100%;
+  margin:0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.page-header .wrapper, .page-footer .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  width: 45%
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.right-nav {
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+nav a {
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.search-box {
+  width: 250px;
+  position: relative;
+}
+
+.search-box label {
+  position: absolute;
+	right: 10px;
+  top: 8px;
+  z-index: 100;
+}
+
+.search-box input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 10px 8px 30px;
+  outline: none;
+  border: 1px solid #e5e5e5;
+  font-family: Roboto;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.right-nav > * {
+	margin-right: 30px;
+}
+
+.cart > * {
+	color: #fff;
+}
+
+.cart > span {
+	padding-left: 5px;
+}
+
+/*==========================================*/
+
+/*==================== MAIN ===================================*/
+/*==================== BANNER ===================================*/
+.banner {
+	height: 612px;
+	background: url(../images/nike.jpg);
+	background-size: cover; /* stretches picture to entire width and height of the box */
+	background-position: center;
+	padding-top: 230px;
+	box-sizing: border-box;
+}
+
+.banner-block {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 60px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.banner-block h6 {
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 3px;
+	font-size: 15px;
+}
+
+.banner-block .subtitle {
+	font-size: 60px;
+	font-weight: 300;
+	color: #fff;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	margin: 25px 0;
+}
+
+.learn-more {
+	display: block; /* so that it gets displayed as a button*/
+	padding: 20px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	background: #ca0500;
+	font-size: 14px;
+	text-decoration: none;
+	width: 166px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.learn-more:hover {
+	box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+	border: 1px solid #ff0000;
+}
+
+
+main .wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	/* flex-direction: row; */
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+main .wrapper > * {
+	/* width: 50%; */
+}
+
+.display-item{
+	width: 500px;
+	height: 300px;
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center;
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.item-1 {
+	background-image: url("https://thatshirt.com/wp-content/uploads/2017/08/Gildan-1850-Heavy-Blend-50-50-Pullover-Hoodie-White-front.jpg");
+}
+
+.item-2 {
+	background-image: url("https://media.gq.com/photos/5ae0bdd2b9cef5027dc12e50/master/w_2000,h_1333,c_limit/2018-04_GQ_Basic-White-Tees-sunspel_3x2.jpg");
+}
+
+.item-3 {
+	background-image: url("https://assets.adidas.com/images/w_600,f_auto,q_auto/781f95d9c93a48fda7bca87401031648_9366/3-Stripes_Shorts_Grey_DH5803_21_model.jpg");
+}
+.item-4 {
+	background-image: url("https://i.pinimg.com/originals/14/aa/c1/14aac19da501b3586c5a19c7556c2d2d.jpg");
+}
+
+.display-item .subtitle {
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 25px 0;
+	color: #000;
+}
+
+
+/*==========================================*/
+
+/*==================== FOOTER ===================================*/
+.page-footer::before {
+	content: "";
+	display: block;
+	width: 100%;
+	border: 1px solid gray;
+}
+.page-footer {
+	clear: both;
+	height: 200px;
+	box-sizing: border-box;
+}
+
+.page-footer .wrapper {
+	margin: 10px;
+	padding: 30px 0;
+}
+
+.footer-col h2 {
+	color: #fff;
+	font-size: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.copy {
+	margin-top: 40px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.page-footer li {
+	font-size: 15px;
+	color: #999;
+	line-height: 1.6;
+}
+
+.socials {
+	display: flex;
+  justify-content: flex-end;
+}
+
+.socials a {
+	display: block;
+	width: 45px;
+  height: 45px;
+  font-size: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex; /* we do this because we want to image to be displayed in the middle */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+/*===============================================*/
+/*====================PRODUCT DETAIL & SEARCH RESULTS PAGE====================*/
+.detail-wrapper {
+  width: 95%;
+  margin: 25px auto;
+}
+
+.product-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-detail {
+  padding-left: 35px;
+  box-sizing: border-box;
+}
+
+.product-detail h1, .review-section h1 {
+  font-family: Proxima;
+  font-weight: 300;
+  font-size: 60px;
+  letter-spacing: 2px;
+}
+
+.price {
+	font-size: 18px;
+	letter-spacing: 3px;
+	margin: 10px 0 20px;
+}
+
+.product-detail hr {
+	margin: 30px 0;
+}
+
+.size-section label {
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.size-option {
+	margin-left: 20px;
+	width: 400px;
+	height: 30px;
+	box-sizing: border-box;
+	position: relative;
+	line-height: 1.2;
+	text-align: center;
+}
+
+.qty {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 350px;
+  line-height: 1.2;
+  height: 30px;
+}
+
+.description {
+	margin: 25px 0;
+	line-height: 1.8;
+	letter-spacing: 2px;
+}
+
+.addCart, .review-form input[type='submit'] {
+	display: block
+	padding: 20px 30px;
+	color: #fff;
+	background: #ca0500;
+	font-size: 18px;
+	box-sizing: border-box;
+	margin: 20px auto;
+	outline: none;
+	width: 100%;
+	height: 40px;
+	border: none;
+	text-transform: uppercase;
+	font-family: Proxima;
+	letter-spacing: 3px;
+}
+
+.review-section h1 {
+  font-family: Proxima;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.review-form {
+	width: 650px;
+}
+
+.review-form > div{
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+form input[type='text'] {
+	height: 25px;
+	width: 300px;
+}
+
+
+/*===============================================*/
+/*====================CATEGORY PAGE====================*/
+.category-wrapper {
+	width: 90%;
+	margin: 20px auto;
+	display: flex;
+}
+
+.category-section {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 30%;
+}
+.category-menu p, .sort-menu p, .filter-menu p{
+	font-size: 30px;
+	font-family: Proxima;
+	text-transform: uppercase;
+	margin: 10 auto;
+}
+.category-menu li, .sort-menu li, .filter-menu li{
+	line-height: 1.9;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	border-bottom: 1px solid gray;
+}
+
+.category-menu li:first-child, .filter-menu li:first-child, .sort-menu li:first-child {
+	border-top: 1px solid gray;
+}
+
+.category-menu li:last-child, .filter-menu li:last-child, .sort-menu li:last-child {
+	border-bottom: 0;
+}
+
+.products {
+	margin-left: 30px;
+	width: 100%;
+	float: right;
+}
+
+.page-title > h1 {
+	font-size: 45px;
+	font-family: Proxima;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	float: left;
+}
+
+.page-title > p {
+	float: right;
+	margin-top: 10px;
+}
+
+
+.next-btn {
+	border: 1px solid black;
+	padding: 3px 5px;
+	box-shadow: 2px 1px #888888;
+}
+.product-wrapper {
+	clear: both;
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+
+}
+
+.product-image {
+	position: relative;
+}
+
+.product-image p {
+	color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 50px;
+	padding: 10px;
+	background-color: red;
+}
+
+.product-meta {
+	margin: 15px 0;
+}
